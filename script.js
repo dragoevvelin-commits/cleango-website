@@ -22,10 +22,11 @@ document.querySelectorAll('.ba').forEach(slider => {
   }
 });
 
-// Scroll fade-in
+// Scroll fade-in (progressive enhancement — only hides elements if JS loads)
+document.body.classList.add('js-fi');
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
-}, { threshold: 0.1 });
+}, { threshold: 0.08, rootMargin: '0px 0px 40px 0px' });
 document.querySelectorAll('.fi').forEach(el => io.observe(el));
 
 // Portfolio filter
