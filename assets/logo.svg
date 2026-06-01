@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 224">
+  <defs>
+    <clipPath id="sc">
+      <path d="M100,5 L8,42 L8,133 C8,183 52,216 100,223 C148,216 192,183 192,133 L192,42 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Shield background -->
+  <path d="M100,5 L8,42 L8,133 C8,183 52,216 100,223 C148,216 192,183 192,133 L192,42 Z" fill="#EDE0CC"/>
+
+  <g clip-path="url(#sc)">
+    <!-- Orange T — horizontal crossbar -->
+    <rect x="0" y="54" width="200" height="28" fill="#C75510"/>
+    <!-- Orange T — vertical stem -->
+    <rect x="26" y="54" width="38" height="180" fill="#C75510"/>
+
+    <!-- Ceiling (perspective right) -->
+    <polygon points="64,54 200,54 200,82 64,82" fill="#C8A070"/>
+    <!-- Back wall -->
+    <polygon points="64,82 164,82 164,162 64,162" fill="#B28852"/>
+
+    <!-- Tile floor (left) -->
+    <rect x="64" y="162" width="86" height="65" fill="#D0AC7E"/>
+    <line x1="64"  y1="179" x2="150" y2="179" stroke="#BA9868" stroke-width="1.5"/>
+    <line x1="64"  y1="196" x2="150" y2="196" stroke="#BA9868" stroke-width="1.5"/>
+    <line x1="64"  y1="213" x2="150" y2="213" stroke="#BA9868" stroke-width="1.5"/>
+    <line x1="85"  y1="162" x2="85"  y2="227" stroke="#BA9868" stroke-width="1.5"/>
+    <line x1="107" y1="162" x2="107" y2="227" stroke="#BA9868" stroke-width="1.5"/>
+    <line x1="129" y1="162" x2="129" y2="227" stroke="#BA9868" stroke-width="1.5"/>
+
+    <!-- Wood floor (right) -->
+    <rect x="150" y="162" width="50" height="65" fill="#9C6820"/>
+    <line x1="150" y1="175" x2="200" y2="175" stroke="#845614" stroke-width="1.5"/>
+    <line x1="150" y1="188" x2="200" y2="188" stroke="#845614" stroke-width="1.5"/>
+    <line x1="150" y1="201" x2="200" y2="201" stroke="#845614" stroke-width="1.5"/>
+    <line x1="150" y1="214" x2="200" y2="214" stroke="#845614" stroke-width="1.5"/>
+
+    <!-- C letter -->
+    <text x="152" y="132"
+          font-family="'Arial Black','Franklin Gothic Heavy',Impact,Arial,sans-serif"
+          font-weight="900" font-size="106"
+          fill="#1A1A1A"
+          text-anchor="middle" dominant-baseline="middle">C</text>
+  </g>
+
+  <!-- Shield border -->
+  <path d="M100,5 L8,42 L8,133 C8,183 52,216 100,223 C148,216 192,183 192,133 L192,42 Z"
+        fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linejoin="round"/>
+</svg>
